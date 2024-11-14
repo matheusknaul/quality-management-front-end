@@ -1,15 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
+import Condicional from './components/Condicional';
+import ModalNorma from './components/norma/ModalNorma';
 
 function App() {
   return (
     <div className="App">
-      <HelloWorld/>
-      <SayMyName nome="Matheus"/>
-      <Pessoa nome="Matheus" idade="18" profissao="Padeiro"/>
+      <ModalNorma/>
+      <h1>Renderização Condicional</h1>
+      <Condicional/>
     </div>
   );
 }
