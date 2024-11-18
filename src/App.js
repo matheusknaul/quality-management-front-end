@@ -1,15 +1,29 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
-import Condicional from './components/Condicional';
-import ModalNorma from './components/norma/ModalNorma';
+
+//Layout
+
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+
+//Pages
+
+import Home from './components/pages/Home';
+import Normas from './components/pages/Normas';
+import AnaliseCritica from './components/pages/AnaliseCritica';
 
 function App() {
+
   return (
-    <div className="App">
-      <ModalNorma/>
-      <h1>Renderização Condicional</h1>
-      <Condicional/>
-    </div>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/normas" element={<Normas/>} />
+        <Route path="/analisecritica" element={<AnaliseCritica/>} />
+      </Routes>
+      <Footer/>
+    </Router>
   );
 }
 
