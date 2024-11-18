@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -31,14 +31,4 @@
 .item a:hover{
     /* color: rgb(44, 44, 44); */
     font-weight: bold;
-=======
-.list{
-    display: flex;
-    list-style: none;
-
-}
-
-.item{
-    margin-right: 1rem;
->>>>>>> f472ec48dbcddf491467b1f782c8815b83818393
 }
