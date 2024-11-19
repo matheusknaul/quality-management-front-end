@@ -2,7 +2,7 @@ import styles from './SearchBar.module.css'
 
 //Icon
 
-import {FaSearch} from "react-icons/fa"
+import { CiSearch } from "react-icons/ci";
 
 function SearchBar(){
     return(
@@ -12,7 +12,7 @@ function SearchBar(){
             </div>
             <div className={styles.search_button_container}>
                 <button className={styles.search_button}>
-                    <FaSearch alt="Pesquisar" className={styles.search_icon}/>
+                <CiSearch alt="Pesquisar" className={styles.search_icon}/>
                 </button>
             </div>
         </div>

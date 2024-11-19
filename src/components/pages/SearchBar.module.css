@@ -13,8 +13,8 @@
     width: 60px;
     height: 100%;
     display: flex;
-    align-items: center;
-    border: 1px solid #AC191E;
+    justify-content: center;
+    border: 1px solid rgb(163, 161, 161);
 }
 
 .search_button{
@@ -35,5 +35,5 @@
 .search_icon{
     width: 15px;
     height: 15px;
-    color: white;
+    color: rgb(77, 75, 75);
 }
