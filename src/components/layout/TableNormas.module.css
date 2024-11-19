@@ -1,0 +1,54 @@
+.table_container{
+    width: 100%;
+    overflow-x: auto;
+    background-color: #FBFAFA;
+}
+
+table{
+    all:unset;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px; /* Adiciona espaçamento interno às células */
+    font-size: 16px; /* Ajusta o tamanho do texto */
+
+    text-align: center; /* Centraliza o conteúdo das células */
+}
+
+td{
+    border: 1px solid #ddd; /* Adiciona bordas suaves */
+}
+
+thead {
+    background-color: #f4f4f4; /* Define a cor de fundo do cabeçalho */
+    font-weight: bold; /* Destaca o texto do cabeçalho */
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9; /* Cor de fundo ao passar o mouse nas linhas */
+}
+
+.coluna{
+    background-color: #831316;
+    color: white;
+    font-weight: 400;
+}
+
+.cabecalho{
+    background-color: blue;
+}
+
+.button_gerenciar{
+    all: unset;
+    color: #831316;
+    cursor: pointer;
+}
+
+.button_gerenciar:hover{
+    font-weight: bold;
+}
+
+
