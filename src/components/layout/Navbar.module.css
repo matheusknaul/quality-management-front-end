@@ -4,9 +4,9 @@
     background-color: #831316;
     padding: 0.5em;
     border-bottom: 2.5px solid #fff;
-
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
-
 .logo_scitec{
     width: 80px;
     height: 60.26px;

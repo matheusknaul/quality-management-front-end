@@ -3,6 +3,7 @@ import NormasList from "./NormasList";
 import Container from "../layout/Container";
 import Banner from "../layout/Banner";
 import TableNorma from "../layout/TableNorma";
+import GerenciadorNormas from './GerenciadorNormas';
 
 function Normas(){
 
@@ -11,7 +12,7 @@ function Normas(){
     return(
         <div>
             <Banner/>
-            <h1>Normas</h1>
+            <GerenciadorNormas/>
             <Container>
                 <NormasList onNormasLoaded={setNormas}/>
                 <TableNorma normas={normas} />
