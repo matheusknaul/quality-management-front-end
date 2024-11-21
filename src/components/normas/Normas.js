@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import NormasList from "./NormasList";
 import Container from "../layout/Container";
-import Banner from "../layout/Banner";
-import TableNorma from "../layout/TableNorma";
-import GerenciadorNormas from './GerenciadorNormas';
+import Banner from "./Banner";
+import TableNorma from "./TableNorma";
 
 function Normas(){
 
@@ -12,7 +11,6 @@ function Normas(){
     return(
         <div>
             <Banner/>
-            <GerenciadorNormas/>
             <Container>
                 <NormasList onNormasLoaded={setNormas}/>
                 <TableNorma normas={normas} />

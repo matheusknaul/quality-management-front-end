@@ -9,7 +9,7 @@ import Footer from './components/layout/Footer';
 //Pages
 
 import Home from './components/pages/Home';
-import Normas from './components/pages/Normas';
+import Normas from './components/normas/Normas';
 import AnaliseCritica from './components/pages/AnaliseCritica';
 
 function App() {

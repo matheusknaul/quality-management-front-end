@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './TableNormas.module.css'
-import ModalNorma from '../pages/ModalNorma';
+import ModalNorma from './ModalNorma';
 
 function TableNorma({normas}){
 
