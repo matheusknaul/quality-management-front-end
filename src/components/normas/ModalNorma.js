@@ -30,7 +30,6 @@ function ModalNorma({ isOpen, onClose, norma }) {
             <p className={styles.row_title}>Última verificação:</p>
             <p className={styles.row_description}>{norma.data_verificacao}</p>
           </div>
-
           <div className={styles.dev_container}>
             <div className={styles.title_container}>
                 <p className={styles.title}>Informações de Desenvolvedor</p>

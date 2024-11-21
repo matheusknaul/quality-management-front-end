@@ -3,6 +3,7 @@ import NormasList from "./NormasList";
 import Container from "../layout/Container";
 import Banner from "./Banner";
 import TableNorma from "./TableNorma";
+import NewNormaModal from './NewNormaModal';
 
 function Normas(){
 
@@ -11,6 +12,7 @@ function Normas(){
     return(
         <div>
             <Banner/>
+            <NewNormaModal/>
             <Container>
                 <NormasList onNormasLoaded={setNormas}/>
                 <TableNorma normas={normas} />
