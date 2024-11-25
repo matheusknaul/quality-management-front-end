@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './GerenciadorNormas.module.css'
 import NewNormaModal from './NewNormaModal';
+import ImportScopeModal from './ImportScopeModal';
+import ImportScope from './ImportScope';
 
 function GerenciadorNormas(){
 
@@ -19,7 +21,7 @@ function GerenciadorNormas(){
             <div className={styles.container_gerenciador}>
                 <button className={styles.button} onClick={() => openModal()}>Adicionar Norma</button>
                 <button className={styles.button}>Iniciar Checagem</button>
-                <button className={styles.button}>Importar Escopo</button>
+                <ImportScope/>
             </div>
             <NewNormaModal isOpen={isAddNormaModalOpen} onClose={closeModal}/>
         </div>
