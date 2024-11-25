@@ -4,10 +4,19 @@ function NewNormaModal({ isOpen, onClose }){
 
     if (!isOpen) return null
 
+    function testeConsole(){
+        console.log("sadad")
+    }
+
     return(
         <div className={styles.modal} onClick={onClose}>
             <div className={styles.modal_content} onClick={(e) => e.stopPropagation()}>
-                <span className={styles.close} onClick={onClose}>&times;</span>
+                <div className={styles.title_container}>
+                    <p className={styles.modalTitle}>Adicionar Norma</p>
+                    <span className={styles.close} onClick={onClose}>&times;</span> 
+                </div>
+                
+                
                 <form className={styles.form_newNorma} action="/newnorma" method="POST">
                     <div>
                         <label for="main_tag">Tag principal:</label>
@@ -30,7 +39,7 @@ function NewNormaModal({ isOpen, onClose }){
                         <label for="ano">Ano da norma:</label>
                         <input type="text" id="ano" name="ano"/>
                     </div>
-                    <button className={styles.buttonAdd} type="submit">Adicionar</button>
+                    <button onClick={testeConsole()} className={styles.buttonAdd} type="submit">Adicionar</button>
                 </form>
             </div>
         </div>

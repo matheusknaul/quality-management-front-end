@@ -43,3 +43,11 @@
     cursor: pointer;
 }
 
+.modalTitle{
+
+}
+
+.title_container{
+    display: flex;
+}
+

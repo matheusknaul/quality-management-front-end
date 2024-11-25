@@ -1,8 +1,6 @@
 .container_gerenciador{
-    margin-top: 60px;
-    position: absolute;
     display: flex;
-    justify-content: space-between;
+    margin: 30px;
 }
 
 .button{

@@ -1,0 +1,21 @@
+.message {
+    position: fixed;
+    top: 600px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    z-index: 9999;
+  }
+  
+  .success {
+    color: #547B4A;
+    background-color: #D4FCCA;
+    border-color: #547B4A;
+  }
+  
+  .error {
+    background-color: red;
+  }
+  

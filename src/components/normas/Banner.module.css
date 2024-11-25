@@ -2,13 +2,12 @@
     margin: 0 auto;
     margin-bottom: 20px;
     max-height: 240px;
-    padding: 100px;
     background-color: #831316;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     min-height: 75%;
     align-items: center;
+    position: relative;
 
 }
 
