@@ -77,6 +77,9 @@ button{
 
 .button_edit{
     background-color: #134583;
+    transition: background-position 0.4s ease;
+    
+    
 }
 
 .button_delete{
@@ -90,9 +93,15 @@ button{
     border-radius: 5px;
     border: 1px solid;
     cursor: pointer;
+    background: linear-gradient(to right, #3498db 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: background-position 2s ease;
+    overflow: hidden;
 }
 
 .button_edit:hover{
+    background-position: right;
     background-color: #0c2f5a;
 }
 
