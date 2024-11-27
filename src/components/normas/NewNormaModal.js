@@ -5,8 +5,8 @@ function NewNormaModal({ isOpen, onClose }){
     if (!isOpen) return null
 
     return(
-        <div className={styles.modal} onClick={onClose}>
-            <div className={styles.modal_content} onClick={(e) => e.stopPropagation()}>
+        <div className={styles.modal}>
+            <div className={styles.modal_content}>
                 <div className={styles.title_container}>
                     <p className={styles.modalTitle}>Adicionar Norma</p>
                     <span className={styles.close} onClick={onClose}>&times;</span> 

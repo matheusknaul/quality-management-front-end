@@ -6,7 +6,7 @@ function ImportScopeModal({isOpen, onClose}){
     if(!isOpen) return null
 
     return(
-        <div className={styles.modal} onClick={onClose}>
+        <div className={styles.modal}>
             <div className={styles.modal_content} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.title_container}>
                     <p className={styles.modalTitle}>Importar Escopo de Normas</p>
