@@ -76,14 +76,14 @@ button{
 }
 
 .button_edit{
-    background-color: #134583;
-    transition: background-position 0.4s ease;
-    
-    
+    background-color: #0c2f5a;
 }
 
 .button_delete{
-    background-color: #831316;
+    background: linear-gradient(to right, #5c0c0f 50%, #ca1d22 50%);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: none;
 }
 
 .button_edit, .button_delete{
@@ -93,18 +93,50 @@ button{
     border-radius: 5px;
     border: 1px solid;
     cursor: pointer;
-    background: linear-gradient(to right, #3498db 50%, #ffffff 50%);
-    background-size: 200% 100%;
-    background-position: left;
-    transition: background-position 2s ease;
     overflow: hidden;
 }
 
 .button_edit:hover{
-    background-position: right;
-    background-color: #0c2f5a;
+    background-color: #1c66c0;
+    transition: 1.2s ease;
+    
+
 }
 
 .button_delete:hover{
-    background-color: #5c0c0f;
+    background-position: right;
+    transition: background-position 2s ease;
+    animation: swing 1s infinite;
+}
+
+.button_delete:active{
+    background-color: #ca1d22;
+}
+
+@keyframes swing {
+    0% {
+        transform: scale(1);
+        transform: rotate(0deg);
+       
+    }
+    25% {
+        transform: scale(1.01);
+        transform: rotate(1deg);
+        
+    }
+    50% {
+        transform: scale(1.02);
+        transform: rotate(2deg);
+        
+    }
+    25% {
+        transform: scale(1.01);
+        transform: rotate(-1deg);
+
+    }
+    100% {
+        transform: scale(1); 
+        transform: rotate(0deg);
+        
+    }
 }

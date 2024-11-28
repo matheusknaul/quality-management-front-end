@@ -1,10 +1,26 @@
 import styles from './ModalNorma.module.css'
+import DropdownDeleteNorma from "./DropdownDeleteNorma"
+import {useState} from "react"
 
 function ModalNorma({ isOpen, onClose, norma }) {
-    if (!isOpen) return null; // Não renderiza nada se o modal estiver fechado
+    
+
+    const [isOpenDropdown, setIsOpenDropdown] = useState(false);
+
+    const closeDropdown = () =>{
+      setIsOpenDropdown(false);
+    }
+
+    const openDropdown = () =>{
+      setIsOpenDropdown(true);
+    }
+
+    if (!isOpen) return null;
   
     return (
+      
       <div className={styles.modal} onClick={onClose}>
+        
         <div className={styles.modal_content} onClick={(e) => e.stopPropagation()}>
           <div className={styles.title_container}>
             <p className={styles.title}>Gerenciar Norma</p>
@@ -37,7 +53,8 @@ function ModalNorma({ isOpen, onClose, norma }) {
             <p>Teste</p>
           </div>
           <div className={styles.gestao_container}>
-            <button className={styles.button_delete}>Deletar</button>
+            <button className={styles.button_delete} onClick={openDropdown}>Deletar</button>
+            <DropdownDeleteNorma isOpen={isOpenDropdown} onClose={closeDropdown}/>
             <button className={styles.button_edit}>Editar</button>
           </div>
         </div>
