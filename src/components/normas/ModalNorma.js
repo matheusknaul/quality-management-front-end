@@ -4,6 +4,7 @@ import {useState} from "react"
 
 function ModalNorma({ isOpen, onClose, norma }) {
     
+    // before edit
 
     const [isOpenDropdown, setIsOpenDropdown] = useState(false);
 
