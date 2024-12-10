@@ -78,7 +78,7 @@ function ModalNorma({ isOpen, onClose, norma }) {
                 <div className={styles.linkNorma_container}>
                   <p className={styles.link_text}>Abri no site</p>
                   <div className={styles.box_container}>
-                    <p className={styles.link}>{norma.link}</p>
+                    <a href={norma.link} className={styles.link} target="_blank">Clique aqui</a>
                   </div>
                 </div>
               </div>
@@ -107,14 +107,14 @@ function ModalNorma({ isOpen, onClose, norma }) {
                   <div className={styles.numberDev_container}>
                     <p className={styles.numberDev_title}>Número</p>
                     <div className={styles.box_container}>
-                      <p className={styles.number_text}>{norma.number}</p>
+                      <p className={styles.number_text}>{norma.number_main}</p>
                     </div>
                   </div>
 
                   <div className={styles.partDev_container}>
                     <p className={styles.partDev_title}>Parte</p>
                     <div className={styles.box_container}>
-                      <p className={styles.part_text}>{norma.part}</p>
+                      <p className={styles.part_text}>{norma.part_main}</p>
                     </div>
                   </div>
 

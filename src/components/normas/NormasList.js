@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function NormasList({ onNormasLoaded }) { // Recebe a função como prop
+function NormasList({ onNormasLoaded }) {
   const [loading, setLoading] = useState(true);  
   const [error, setError] = useState(null); 
 
@@ -13,15 +13,14 @@ function NormasList({ onNormasLoaded }) { // Recebe a função como prop
         return response.json();
       })
       .then((data) => {
-        onNormasLoaded(data); // Passa os dados para o componente pai
+        onNormasLoaded(data);
         setLoading(false); 
       })
       .catch((error) => {
         setError(error.message);
         setLoading(false);
       });
-  }, [onNormasLoaded]); // Adiciona a função como dependência para evitar warnings
-
+  }, [onNormasLoaded]);
   if (loading) {
     return <div>Carregando...</div>;
   }
@@ -30,7 +29,7 @@ function NormasList({ onNormasLoaded }) { // Recebe a função como prop
     return <div style={{ color: 'red' }}>Erro: {error}</div>;
   }
 
-  return null; // Não renderiza nada diretamente
+  return null;
 }
 
 export default NormasList;
