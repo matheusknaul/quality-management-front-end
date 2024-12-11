@@ -12,7 +12,14 @@ function ImportScopeModal({isOpen, onClose}){
                     <p className={styles.modalTitle}>Importar Escopo de Normas</p>
                     <span className={styles.close} onClick={onClose}>&times;</span> 
                 </div>
-                <form></form>
+                <div className={styles.import_container}>
+                    <form action='http://localhost:5000/normas/importscope' method="post" enctype="multipart/form-data">
+                        <div className={styles.input_box}>
+                            <input type="file" name="file"/>
+                        </div>
+                        <button type='submit'>Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
     )
